@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rdepartment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="2dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".rdepartment"
+    android:background="@color/colorPrimary">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="1">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerviewdept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:layout_weight="0.58"
+                android:layout_below="@+id/cardView4"
+                app:cardCornerRadius="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:id="@+id/cardView4"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/orange">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    app:srcCompat="@drawable/svcesmall"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/imageView" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="80dp"
+                    android:id="@+id/deptdesc" />
+
+                <TextView
+                    android:text="Departments"
+                    android:layout_width="203dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/textView2"
+                    android:textSize="34sp" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_marginLeft="290dp"
+                    android:layout_marginTop="160dp"
+                    app:fabSize="normal"
+                    android:scaleType="center"
+                    app:srcCompat="@android:drawable/star_big_on"
+                    android:id="@+id/floatingActionButton"
+                    android:background="@drawable/spam" />
+
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

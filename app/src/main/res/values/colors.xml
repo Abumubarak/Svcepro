@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#298dff</color>
+    <color name="colorPrimaryDark">#4256d9</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="black">#3e3c3c</color>
+    <color name="orange">#ffaa00</color>
+    <color name="white">#FFF</color>
+    <color name="buttonlight">#53ffffff</color>
+</resources>

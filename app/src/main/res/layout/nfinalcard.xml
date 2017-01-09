@@ -1,0 +1,52 @@
+<android.support.v7.widget.CardView
+    android:id="@+id/finalcard"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    app:cardCornerRadius="50dp"
+    app:cardElevation="@dimen/activity_vertical_margin"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="240dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="#da07dbfc">
+
+        <ImageView
+            android:id="@+id/finalimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/ccd" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/finalimg"
+            android:layout_toRightOf="@+id/finalimg"
+            android:layout_toEndOf="@+id/finalimg"
+            android:id="@+id/title" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_toRightOf="@+id/finalimg"
+            android:layout_toEndOf="@+id/finalimg"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/desc" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

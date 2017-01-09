@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="svce.svcepro.finalactivity"
+
+    android:background="#fffefe">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:columnCount="4"
+        android:rowCount="4"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/gridLayout"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="100dp">
+
+    </GridLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="    TIMETABLE         BUS ROUTES          FACULTY ADV"
+        android:id="@+id/textView17"
+        android:layout_below="@+id/timetable"
+        android:layout_alignRight="@+id/textView18"
+        android:layout_alignEnd="@+id/textView18"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="        NOTES            QUES PAPERS      NOTIFICATIONS"
+        android:id="@+id/textView18"
+        android:layout_below="@+id/notes"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#030303" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textView19"
+        android:text="       TEACHERS        ROLL NOS             COLLEGE MAP"
+        android:layout_below="@+id/roll"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#030303"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/timetable"
+        android:src="@drawable/tt"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/busc"
+        android:layout_alignTop="@+id/timetable"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bus" />
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/asses"
+        android:layout_alignTop="@+id/busc"
+        android:layout_toRightOf="@+id/busc"
+        android:layout_toEndOf="@+id/busc"
+        android:src="@drawable/assessment"
+        android:layout_marginLeft="8dp" />
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/notes"
+        android:src="@drawable/notes"
+        android:layout_below="@+id/textView17"
+        android:layout_toRightOf="@+id/gridLayout"
+        android:layout_toEndOf="@+id/gridLayout"
+        android:layout_marginTop="7dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:id="@+id/qp"
+        android:layout_below="@+id/textView17"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/qp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="7dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:id="@+id/noti"
+        android:layout_below="@+id/textView17"
+        android:layout_alignLeft="@+id/asses"
+        android:layout_alignStart="@+id/asses"
+        android:src="@drawable/noti"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="7dp" />
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:id="@+id/teacher"
+        android:src="@drawable/teach"
+        android:layout_below="@+id/textView18"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/roll"
+        android:layout_alignTop="@+id/teacher"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/roll" />
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/map"
+        android:layout_below="@+id/textView18"
+        android:layout_alignLeft="@+id/noti"
+        android:layout_alignStart="@+id/noti"
+        android:src="@drawable/map"
+        android:layout_marginTop="5dp" />
+
+</RelativeLayout>
